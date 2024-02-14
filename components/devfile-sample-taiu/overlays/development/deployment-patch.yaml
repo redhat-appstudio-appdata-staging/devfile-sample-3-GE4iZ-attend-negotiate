@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-taiu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/sbudhwar-1-tenant/devfile-sample-3/devfile-sample-taiu@sha256:52127dd76c195cb16d7b69d8ae300f457908f136b2d81f33eb95944da2aa0611
+        name: my-nodejs
+        resources: {}
+status: {}
