@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-taiu
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/sbudhwar-1-tenant/devfile-sample-3/devfile-sample-taiu@sha256:52127dd76c195cb16d7b69d8ae300f457908f136b2d81f33eb95944da2aa0611
         name: my-nodejs
         ports:
         - containerPort: 3001
